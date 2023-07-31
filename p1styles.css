@@ -1,0 +1,317 @@
+/********w************
+    
+    Project 1 Stylesheet
+    Name: Na Feng	
+    Date: 2023-06-13
+    Description: Create a valid HTML5 page and a corresponding external CSS file that will simulate what the mock is presenting.
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: Verdana;
+}
+
+div#container {
+	width: 810px;
+	background-image: linear-gradient(to bottom, white 0%,white 95%, rgb(230, 230, 230) 100%);
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+}
+
+/* three navigation */
+.nav1 ul li a:hover {
+	background-color: #a2a2a2;
+}
+
+.nav1 ul li a:focus {
+	border-bottom: 2px solid;
+}
+
+/* header */
+#headerContainer {
+  	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+}
+
+
+header nav ul {
+	list-style: none;
+	display: inline-flex;
+}
+
+header nav ul li {
+	padding: 0px 10px;
+	margin: 2px 0px;	
+}
+
+header nav ul li:not(:last-child) {
+	border-right: 1px solid #006699; 	
+}
+
+header nav ul li a{
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #0f6f9f;
+	font-size: 12px;
+}
+
+header form {	
+	padding-bottom: 10px;
+}
+
+header form input[type=search] {
+	width: 80px;
+}
+
+header article{
+	height: 190px;
+	background-image: url(./images/headerBackground.jpg);
+	color: white;
+	display: flex;
+	justify-content: flex-start;
+}
+
+header article h1 {
+	font-weight: 100;
+	font-size: 32px;
+	letter-spacing: 5px;
+	padding: 26px;	
+}
+
+header article p {
+	margin-right: auto;
+	align-self: flex-end;
+	font-style: italic;
+	padding: 15px 32px;	
+	font-size: 14px;
+}
+
+#horizontalNav {
+	background-image: linear-gradient(#92c7fa, #0c6ea1);
+}
+
+#horizontalNav ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+#horizontalNav ul li {
+	margin: 5px 0px;
+}
+
+#horizontalNav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px 10px;
+	display: block;
+}
+	
+#horizontalNav ul li:not(:last-child) {
+	border-right: 1px solid #006699; 
+	box-shadow: 1px 0px 0px white;	
+}
+
+/* content */
+#content {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* aside */
+aside {
+	width: 68%;
+}
+
+aside nav ul li {
+	border-top: #a9a9a9 solid 1px;
+	background-image: linear-gradient(#f2f2f2, #cecdcd);
+	list-style: none;
+	padding: 5px 0px 5px 10px;
+}
+
+aside nav ul li:not(:first-of-type) {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+aside nav ul li:not(:first-child) a {
+	margin-left: -8px;
+}
+
+aside nav ul li a {
+	text-decoration: none;
+	color: #333333;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#nasaLogo {
+	display: flex;
+	align-items: flex-start;
+	border-top: #cfcece solid 1px;
+	margin-top: 35px;
+	padding-top: 5px;
+}
+
+#nasaLogo p {
+	font-size: 11px;
+	color: #808080;
+}
+
+/* article */
+#content article {
+	margin: 10px 10px 0px 20px;
+	display: flex;
+}
+
+#articleNav {
+	display: flex;
+	font-size: 10px;
+	margin: 0px -10px;
+}
+
+#articleNav a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #4389ab;
+}
+
+#articleNav span {
+	font-size: 8px;
+	margin: 2px 8px;
+	letter-spacing: -3px;
+}
+
+article h2 {
+	border-bottom: #cfcece solid 1px;
+	padding: 5px 0px;
+	font-size: 16px;
+	color: #333437;
+}
+
+article h3 {
+	font-size: 12px;
+	height: 20px;
+}
+
+article ul li {
+	list-style: none;
+}
+
+#articleContent {
+	font-size: 12px;
+	height: 90px;
+	line-height: 1.7;
+}
+
+article a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #006ea2;
+}
+
+#articleContent2 {
+	display: flex;
+	font-size: 12px;
+	line-height: 1.7;
+}
+
+#articleContent2 p {
+	height: 100px;
+}
+
+#articleContent2 ul {
+	margin-left: 20px;
+}
+
+#articleContent2 ul li a {
+	line-height: 2.5;
+}
+
+#image {
+	border: #a7a6a6 solid 1px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	height: 265px;
+	font-size: 10px;
+	width: 250px;
+}
+
+#image img{
+	border: black solid 1px;
+}
+
+#image p{
+	line-height: 1.0;
+}
+/* footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 10px;
+	margin: 50px 0px 0px 0px;
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+}
+
+footer a {
+	text-decoration: none;
+	color: #006699;
+
+}
+
+footer ul li {
+	padding: 0px 9px;
+}
+
+footer ul li:not(:last-of-type){
+	border-right: 1px solid black;
+}
+
+footer p:not(:first-of-type) a:last-of-type {
+	padding: 0px 10px;
+	margin: 0px 10px;
+	border-left: 1px solid black;
+}
+
+footer p:first-of-type {
+	padding: 3px;
+}
+
+footer p:last-of-type {
+	color: #a2a2a2;
+}
